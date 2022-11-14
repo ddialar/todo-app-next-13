@@ -5,6 +5,9 @@
       "@api/*": [
         "pages/api/*"
       ],
+      "@hooks": [
+        "src/view/hooks"
+      ],
       "@layouts": [
         "src/view/layouts"
       ],

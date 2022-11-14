@@ -1,5 +1,5 @@
+import { useUrlPath } from '@hooks'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 const NavigationItems = [
   {
@@ -15,7 +15,7 @@ const NavigationItems = [
 ]
 
 export const NavigationBar = () => {
-  const pathname = usePathname()
+  const pathname = useUrlPath()
   const selectedItem = pathname?.match(/^\/[a-z-]*\/?/gm)?.shift()?.replace('/', '') || 'home'
 
   return (
